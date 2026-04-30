@@ -1,60 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pricing - KSA</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Kaushik Singh & Associates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">KSA</div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link active">Pricing</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="index.html#contact" class="cta-btn">Get Consultation</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <div class="logo">KSA</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Pricing</a>
-  </nav>
-</header>
+    <!-- PRICING HERO -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Transparent & Affordable Pricing</h1>
+            <p>Choose the perfect plan for your business needs</p>
+        </div>
+    </section>
 
-<section class="hero small">
-  <h1>Simple & Transparent Pricing</h1>
-</section>
+    <!-- PRICING CARDS -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- BASIC PLAN -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>💼 Basic Plan</h3>
+                        <p class="price">₹999<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✅ GST Filing (1 return)</li>
+                        <li>✅ Basic Accounting</li>
+                        <li>✅ Email Support</li>
+                        <li>✅ Invoice Templates</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-outline">Choose Plan</a>
+                </div>
 
-<section class="pricing">
+                <!-- STANDARD PLAN (HIGHLIGHTED) -->
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>📊 Standard Plan</h3>
+                        <p class="price">₹1,999<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✅ GST Filing (4 returns/year)</li>
+                        <li>✅ ITR Filing</li>
+                        <li>✅ Full Accounting Support</li>
+                        <li>✅ Tax Planning</li>
+                        <li>✅ Priority Email & Phone Support</li>
+                        <li>✅ Monthly Compliance Report</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-primary">Choose Plan</a>
+                </div>
 
-  <div class="card highlight">
-    <h3>Starter</h3>
-    <p>₹1,999/month</p>
-    <ul>
-      <li>GST Filing</li>
-      <li>Basic Accounting</li>
-    </ul>
-  </div>
+                <!-- BUSINESS PLAN -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>🚀 Business Plan</h3>
+                        <p class="price">₹4,999<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✅ Unlimited GST Filing</li>
+                        <li>✅ Full ITR & Audit Support</li>
+                        <li>✅ Company Registration & Compliance</li>
+                        <li>✅ Advanced Tax Planning</li>
+                        <li>✅ Dedicated Account Manager</li>
+                        <li>✅ 24/7 Priority Support</li>
+                        <li>✅ Quarterly Business Review</li>
+                        <li>✅ Payroll Management</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-outline">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="card highlight">
-    <h3>Growth</h3>
-    <p>₹4,999/month</p>
-    <ul>
-      <li>GST + TDS</li>
-      <li>ITR Filing</li>
-    </ul>
-  </div>
+    <!-- CUSTOM PRICING CTA -->
+    <section class="custom-pricing-section">
+        <div class="container">
+            <h2>Need Custom Pricing?</h2>
+            <p>We offer tailored solutions for enterprises and complex business structures.</p>
+            <a href="index.html#contact" class="btn btn-primary">Contact Sales Team</a>
+        </div>
+    </section>
 
-  <div class="card highlight">
-    <h3>Premium</h3>
-    <p>₹9,999/month</p>
-    <ul>
-      <li>Full Compliance</li>
-      <li>Dedicated CA</li>
-    </ul>
-  </div>
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/919650086438" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <span>💬</span>
+    </a>
 
-</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kaushik Singh & Associates. All rights reserved.</p>
+        </div>
+    </footer>
 
-<footer>
-  <p>© 2026 Kaushik Singh & Associates</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
