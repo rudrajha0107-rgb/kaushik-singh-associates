@@ -3,191 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CA Nitin Kaushik - Chartered Accountant Services</title>
+    <title>Kaushik Singh & Associates - Chartered Accountant Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Floating animation for hero text */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .floating-hero {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        /* Service cards with emoji */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        
-        .service-emoji {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-        
-        /* Partner section */
-        .partner-section {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #f5f7fb, #eef4ff);
-            border-radius: 12px;
-            margin: 40px 20px;
-        }
-        
-        .partner-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 12px;
-            object-fit: cover;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .partner-info h3 {
-            font-size: 28px;
-            margin: 0 0 5px 0;
-            color: #0d1b2a;
-        }
-        
-        .partner-info p {
-            color: #1b9aaa;
-            font-size: 16px;
-            margin: 0;
-        }
-        
-        @media(max-width: 768px) {
-            .partner-section {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">🏢 KSA</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#partner">Partner</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a href="#contact" class="nav-btn">Get Consultation</a>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1 class="floating-hero">✨ Trusted Chartered Accountant Services</h1>
-            <p>GST Filing • ITR Filing • Audit • Company Registration • Compliance Solutions</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn">Explore Services</a>
-                <a href="#contact" class="btn-outline">Book Consultation</a>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">KSA</div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="cta-btn">Get Consultation</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-        <h2>💼 Our Services</h2>
-        <p class="subtext">Complete financial & compliance solutions for your business</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-emoji">📊</div>
-                <h3>GST Filing</h3>
-                <p>Monthly & quarterly GST return filing with complete compliance support.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-emoji">📝</div>
-                <h3>ITR Filing</h3>
-                <p>Individual & business income tax return filing with tax optimization.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-emoji">🏢</div>
-                <h3>Company Registration</h3>
-                <p>Pvt Ltd, LLP, Partnership firm registration with full legal support.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-emoji">✅</div>
-                <h3>Audit & Compliance</h3>
-                <p>Statutory audit, tax audit and comprehensive accounting services.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-emoji">💰</div>
-                <h3>Financial Planning</h3>
-                <p>Investment guidance and financial strategy for wealth management.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-emoji">📈</div>
-                <h3>Business Advisory</h3>
-                <p>Strategic business consulting and financial advisory services.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Trusted Chartered Accountant Services in India</h1>
+                <p>GST Filing • ITR Filing • Audit • Company Registration</p>
+                <div class="hero-buttons">
+                    <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+                    <a href="#contact" class="btn btn-outline">Contact Now</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- PARTNER SECTION -->
-    <section id="partner" class="partner-section">
-        <img src="partner-nitin-kaushik.jpg" alt="CA Nitin Kaushik" class="partner-image">
-        <div class="partner-info">
-            <h3>🎓 CA Nitin Kaushik</h3>
-            <p>Senior Chartered Accountant & Partner</p>
-            <p style="margin-top: 15px; font-size: 14px; color: #555;">
-                With over 15 years of experience in taxation, compliance, and financial advisory, CA Nitin Kaushik provides expert guidance to businesses and individuals across various sectors.
-            </p>
+    <section class="partner-section">
+        <div class="container">
+            <h2 class="section-title">Our Partner</h2>
+            <div class="partner-card featured">
+                <img src="images/nitin.jpg" alt="CA Nitin Kaushik" class="partner-image">
+                <div class="partner-info">
+                    <h3>CA Nitin Kaushik</h3>
+                    <p class="role">Chartered Accountant</p>
+                    <p class="description">With over 15 years of experience in taxation, compliance, and financial advisory, CA Nitin Kaushik provides expert guidance to businesses and individuals across various sectors.</p>
+                    <div class="partner-contact">
+                        <span>📧 canitinkaushik1995@gmail.com</span>
+                        <span>📱 +91-9650086438</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
-    <section class="why">
-        <h2>⭐ Why Choose Us?</h2>
-        <div class="why-grid">
-            <div class="why-box">✔️ Expert CA Professionals</div>
-            <div class="why-box">⚡ Fast & Reliable Service</div>
-            <div class="why-box">💵 Affordable Transparent Pricing</div>
-            <div class="why-box">🛡️ 100% Compliance Assured</div>
+    <!-- TEAM SECTION -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/team1.jpg" alt="Team Member">
+                    <h3>Priya Sharma</h3>
+                    <p>Tax Consultant</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team2.jpg" alt="Team Member">
+                    <h3>Rajesh Kumar</h3>
+                    <p>Auditor</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team3.jpg" alt="Team Member">
+                    <h3>Neha Patel</h3>
+                    <p>Compliance Officer</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team4.jpg" alt="Team Member">
+                    <h3>Amit Singh</h3>
+                    <p>Financial Advisor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Complete financial & compliance solutions for your business</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>GST Filing</h3>
+                    <p>Monthly & quarterly GST return filing with complete compliance support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>ITR Filing</h3>
+                    <p>Individual & business income tax return filing with tax optimization.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Company Registration</h3>
+                    <p>Pvt Ltd, LLP, Partnership firm registration with full legal support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>Audit & Compliance</h3>
+                    <p>Statutory audit, tax audit and comprehensive accounting services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Tax Planning</h3>
+                    <p>Strategic tax planning to minimize liability and maximize savings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">✔</div>
+                    <h3>Experienced Professionals</h3>
+                    <p>Team of certified and experienced CA professionals with proven track record.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3>Fast & Reliable Service</h3>
+                    <p>Quick turnaround time without compromising on quality and accuracy.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>Affordable Fees</h3>
+                    <p>Transparent and competitive pricing tailored to your business needs.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🛡</div>
+                    <h3>Trusted by Clients</h3>
+                    <p>Serving 500+ satisfied clients across various industries.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <h2>📞 Contact Us</h2>
-        <div class="contact-box">
-            <p><b>📧 Email:</b> canitinkaushik1995@gmail.com</p>
-            <p><b>📱 Phone:</b> +91-9650086438</p>
-            <p><b>📍 Office:</b> Delhi, India</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:canitinkaushik1995@gmail.com">canitinkaushik1995@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📱 Phone</h3>
+                        <p><a href="tel:+919650086438">+91-9650086438</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📍 Address</h3>
+                        <p>Delhi, India</p>
+                    </div>
+                </div>
+                <a href="mailto:canitinkaushik1995@gmail.com" class="btn btn-primary">Send Email</a>
+            </div>
         </div>
-        <a class="btn" href="mailto:canitinkaushik1995@gmail.com">Send Email Now</a>
     </section>
 
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/919650086438" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <span>💬</span>
+    </a>
+
     <!-- FOOTER -->
-    <footer>
-        © 2026 Kaushik Singh & Associates | All Rights Reserved | Professional Tax & Accounting Services
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kaushik Singh & Associates. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
