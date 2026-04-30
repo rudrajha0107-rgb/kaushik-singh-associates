@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing - KSA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">KSA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+  </nav>
+</header>
+
+<section class="hero small">
+  <h1>Simple & Transparent Pricing</h1>
+</section>
+
+<section class="pricing">
+
+  <div class="card highlight">
+    <h3>Starter</h3>
+    <p>₹1,999/month</p>
+    <ul>
+      <li>GST Filing</li>
+      <li>Basic Accounting</li>
+    </ul>
+  </div>
+
+  <div class="card highlight">
+    <h3>Growth</h3>
+    <p>₹4,999/month</p>
+    <ul>
+      <li>GST + TDS</li>
+      <li>ITR Filing</li>
+    </ul>
+  </div>
+
+  <div class="card highlight">
+    <h3>Premium</h3>
+    <p>₹9,999/month</p>
+    <ul>
+      <li>Full Compliance</li>
+      <li>Dedicated CA</li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Kaushik Singh & Associates</p>
+</footer>
+
+</body>
+</html>
