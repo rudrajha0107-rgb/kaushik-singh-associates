@@ -1,67 +1,73 @@
 body {
-  margin: 0;
   font-family: Arial;
-  background: #0d0d0d;
-  color: white;
+  margin: 0;
+  background: #f5f7fb;
+  color: #222;
 }
 
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  background: black;
-}
-
-.logo {
-  color: #a855f7;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-nav a {
-  margin: 0 10px;
+  background: #0d1b2a;
   color: white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
   text-decoration: none;
 }
 
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(black, purple);
+  background: white;
 }
 
-.hero.small {
-  padding: 40px;
+.hero h1 {
+  font-size: 40px;
 }
 
 .btn {
-  background: purple;
+  display: inline-block;
+  margin-top: 15px;
   padding: 10px 20px;
+  background: #1b9aaa;
   color: white;
   text-decoration: none;
+  border-radius: 5px;
+}
+
+.services {
+  padding: 50px;
+  text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-  padding: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .card {
-  background: #1a1a1a;
+  background: white;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact {
   text-align: center;
-}
-
-.pricing {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   padding: 40px;
+  background: white;
 }
 
-.highlight {
-  border: 2px solid purple;
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0d1b2a;
+  color: white;
 }
