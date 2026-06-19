@@ -448,3 +448,119 @@ font-family:'Playfair Display',serif;
 font-size:70px;
 font-weight:700;
 }
+/* ===== PREMIUM CORPORATE COLORS ===== */
+
+body{
+background:#eef4fb;
+}
+
+/* Alternate section colors */
+
+section:nth-child(even){
+background:#f8fbff;
+}
+
+section:nth-child(odd){
+background:#eef4fb;
+}
+
+/* Hero */
+
+#hero{
+background:linear-gradient(
+135deg,
+#061a33 0%,
+#0b3d7a 50%,
+#1d5fb8 100%
+);
+color:white;
+}
+
+/* About */
+
+#about{
+background:#ffffff;
+}
+
+/* Team */
+
+#team{
+background:#f1f6fd !important;
+}
+
+/* Services */
+
+#services{
+background:#ffffff;
+}
+
+/* Industries */
+
+.industry-box{
+background:#0b3d7a;
+color:white;
+}
+
+/* Why choose us */
+
+.why-box{
+background:#ffffff;
+border-left:5px solid #0d6efd;
+}
+
+/* Process */
+
+.process-section{
+background:#f1f6fd !important;
+}
+
+/* Contact */
+
+.contact-section{
+background:#ffffff;
+}
+
+/* Footer */
+
+.footer-section{
+background:#061a33;
+color:white;
+}
+
+/* Section titles */
+
+.section-title{
+color:#061a33;
+font-weight:800;
+}
+
+/* Fancy blue line */
+
+.section-title::after{
+content:"";
+display:block;
+width:80px;
+height:4px;
+background:#0d6efd;
+margin-top:12px;
+}
+#hero{
+background-size:300% 300%;
+animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
