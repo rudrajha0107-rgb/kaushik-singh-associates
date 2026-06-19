@@ -569,3 +569,12 @@ height:60px;
 width:auto;
 border-radius:8px;
 }
+.team-photo{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #0d6efd;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
