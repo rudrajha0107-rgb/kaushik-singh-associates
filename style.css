@@ -585,3 +585,10 @@ object-fit:cover;
 border-radius:20px;
 box-shadow:0 20px 50px rgba(0,0,0,.15);
 }
+:root{
+    --primary:#4B5563;      /* Grey */
+    --secondary:#6B7280;    /* Light Grey */
+    --dark:#1F2937;         /* Charcoal */
+    --light:#F3F4F6;        /* Background */
+    --white:#FFFFFF;
+}
