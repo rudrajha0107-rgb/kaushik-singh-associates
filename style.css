@@ -592,3 +592,21 @@ box-shadow:0 20px 50px rgba(0,0,0,.15);
     --light:#F3F4F6;        /* Background */
     --white:#FFFFFF;
 }
+.custom-nav{
+    background:#1F2937 !important;
+}#hero{
+    background:url('assets/office.jpg') center center/cover;
+    position:relative;
+}
+
+#hero .overlay{
+    background:rgba(31,41,55,0.85);
+}.btn-primary{
+    background:#4B5563 !important;
+    border-color:#4B5563 !important;
+}
+
+.btn-primary:hover{
+    background:#374151 !important;
+    border-color:#374151 !important;
+}
