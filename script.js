@@ -1,108 +1,234 @@
-// Navbar Scroll Effect
+// ================================
+// NAVBAR SCROLL EFFECT
+// ================================
 
 window.addEventListener("scroll", function () {
 
-const header = document.querySelector("header");
+const navbar = document.querySelector(".custom-nav");
 
 if (window.scrollY > 50) {
-    header.style.background = "#081421";
-    header.style.boxShadow = "0 4px 15px rgba(0,0,0,0.2)";
-}
-else {
-    header.style.background = "#0d1b2a";
-    header.style.boxShadow = "none";
+
+navbar.style.background = "#06172b";
+navbar.style.padding = "10px 0";
+
+} else {
+
+navbar.style.background = "#081b33";
+navbar.style.padding = "15px 0";
+
 }
 
 });
 
+// ================================
+// COUNTER ANIMATION
+// ================================
 
-// Counter Animation
+const counters = document.querySelectorAll(".stat-box h2");
 
-const counters = document.querySelectorAll(".stats h3");
+const speed = 100;
 
 counters.forEach(counter => {
 
-const target = parseInt(counter.innerText);
+const updateCount = () => {
 
-let count = 0;
+const target = counter.innerText.replace("+", "");
 
-const updateCounter = () => {
+if (isNaN(target)) return;
 
-const increment = target / 100;
+const count = +counter.getAttribute("data-count") || 0;
+
+const increment = target / speed;
 
 if (count < target) {
 
-count += increment;
+const newCount = Math.ceil(count + increment);
 
-counter.innerText = Math.ceil(count) + "+";
+counter.setAttribute("data-count", newCount);
 
-setTimeout(updateCounter, 20);
+counter.innerText = newCount + "+";
 
-}
-else {
+setTimeout(updateCount, 20);
 
-if (target === 99) {
-counter.innerText = "99%";
-}
-else {
+} else {
+
 counter.innerText = target + "+";
-}
 
 }
 
 };
 
-updateCounter();
+updateCount();
 
 });
 
+// ================================
+// SCROLL REVEAL ANIMATION
+// ================================
 
-// Scroll Reveal Animation
+const observer = new IntersectionObserver(
 
-const observer = new IntersectionObserver((entries) => {
+(entries) => {
 
 entries.forEach(entry => {
 
 if (entry.isIntersecting) {
 
-entry.target.style.opacity = "1";
-entry.target.style.transform = "translateY(0px)";
+entry.target.classList.add("show");
 
 }
 
 });
 
-});
+},
 
-const cards = document.querySelectorAll(".card");
+{
 
-cards.forEach(card => {
+threshold: 0.15
 
-card.style.opacity = "0";
-card.style.transform = "translateY(40px)";
-card.style.transition = "all 0.6s ease";
+}
 
-observer.observe(card);
-
-});
-
-
-// Contact Form
-
-const form = document.querySelector("form");
-
-if(form){
-
-form.addEventListener("submit", function(e){
-
-e.preventDefault();
-
-alert(
-"Thank you for contacting Kaushik Singh & Associates. We will get back to you shortly."
 );
 
-form.reset();
+const hiddenElements = document.querySelectorAll(
+".service-card, .team-card, .why-box, .industry-box, .testimonial-card, .process-box"
+);
+
+hiddenElements.forEach(el => {
+
+el.classList.add("hidden");
+
+observer.observe(el);
 
 });
 
+// ================================
+// SMOOTH ACTIVE NAV LINK
+// ================================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+
+const sectionTop = section.offsetTop;
+
+if (pageYOffset >= sectionTop - 150) {
+
+current = section.getAttribute("id");
+
 }
+
+});
+
+navLinks.forEach(link => {
+
+link.classList.remove("active");
+
+if (link.getAttribute("href").includes(current)) {
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+// ================================
+// BUTTON RIPPLE EFFECT
+// ================================
+
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(btn => {
+
+btn.addEventListener("click", function (e) {
+
+const circle = document.createElement("span");
+
+const diameter = Math.max(
+this.clientWidth,
+this.clientHeight
+);
+
+const radius = diameter / 2;
+
+circle.style.width = circle.style.height =
+`${diameter}px`;
+
+circle.style.left =
+`${e.clientX - this.offsetLeft - radius}px`;
+
+circle.style.top =
+`${e.clientY - this.offsetTop - radius}px`;
+
+circle.classList.add("ripple");
+
+const ripple = this.getElementsByClassName(
+"ripple"
+)[0];
+
+if (ripple) {
+
+ripple.remove();
+
+}
+
+this.appendChild(circle);
+
+});
+
+});
+
+// ================================
+// SCROLL TO TOP BUTTON
+// ================================
+
+const topBtn = document.createElement("button");
+
+topBtn.innerHTML = "↑";
+
+topBtn.id = "topBtn";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll", () => {
+
+if (window.scrollY > 400) {
+
+topBtn.style.display = "block";
+
+} else {
+
+topBtn.style.display = "none";
+
+}
+
+});
+
+topBtn.addEventListener("click", () => {
+
+window.scrollTo({
+
+top: 0,
+
+behavior: "smooth"
+
+});
+
+});
+
+// ================================
+// LOADER EFFECT
+// ================================
+
+window.addEventListener("load", () => {
+
+document.body.classList.add("loaded");
+
+});
